@@ -1,6 +1,5 @@
 import { Circle } from 'lucide-react'
 import BgImg from '../../../public/backgroundImage.png'
-import CardImg from '../../../public/cardBg.jpg'
 import css from './index.module.scss'
 import cn from "classnames"
 import Lenis from 'lenis'
@@ -13,7 +12,7 @@ export const HomePage = () => {
 
     useEffect( () => {
         const lenis = new Lenis()
-        function raf(time) {
+        function raf(time: number) {
           lenis.raf(time)
           requestAnimationFrame(raf)
         }
