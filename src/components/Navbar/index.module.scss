@@ -1,0 +1,57 @@
+@import '../../styles/vars';
+@import '../../styles/mixins';
+@import 'include-media';
+
+
+.navbar{
+    margin-top: 22px;
+    width: 100vw;
+    position: fixed;
+
+    @include media("<=900px"){
+        display: none;
+    }
+    .navElements{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1440px;
+        margin: 0 auto;
+    }
+    .logo{
+        font-size: 32px;
+        font-weight: bold;
+        color: white;
+
+    }
+    .navList{
+        display: flex;
+        gap: 48px;
+        background-color: rgb(255, 255, 255, 0.2);
+        padding: 13px 32.5px;
+        border-radius: 46px;
+
+            a{
+                font-size: 16px;
+                color: white;
+                font-weight: 300;
+            } 
+    }
+}
+
+.buttonWrapper{
+    display: flex;
+    align-items: center;
+
+    .button{
+        @include Button;
+         padding: 13px 38px;
+}
+.buttonIcon{
+    @include Button;
+    width: 44px;
+    height: 44px;
+ 
+}
+}
+
