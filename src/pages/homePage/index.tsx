@@ -1,5 +1,5 @@
 import { Circle } from 'lucide-react'
-import BgImg from '../../../public/backgroundImage.png'
+import BgImg from '../../../public/backgroundImage.webp'
 import css from './index.module.scss'
 import cn from "classnames"
 import Lenis from 'lenis'
